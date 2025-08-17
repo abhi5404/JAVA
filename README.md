@@ -39,7 +39,7 @@ JAVA/ ├── src/ # Source code files ├── notes/ # Topic-wise notes ├
 
 1. Clone the repository:
 
-git clone https://github.com/your-username/JAVA.git
+git clone https://github.com/abhi5404/JAVA.git
 
 2. Open in your IDE (e.g., VS Code, IntelliJ).
 3. Compile and run Java files from the `src/` directory.
