@@ -63,7 +63,7 @@ Feel free to open an issue or pull request.
 ## 📧 Contact
 
 For any queries, reach out at:  
-**your-email@example.com**
+**abhijitamp378@gmail.com**
 
 ---
 
