@@ -15,15 +15,15 @@ class Volume {
     }
 }
 
-public class VolMain {
+public class VolUsingCommandLine {
     public static void main(String[] args) {
         Volume v = new Volume();
 
         if (args.length < 2) {
             System.out.println("Usage:");
-            System.out.println("Cube: java VolMain 1 side");
-            System.out.println("Cylinder: java VolMain 2 radius height");
-            System.out.println("Ellipsoid: java VolMain 3 a b c");
+            System.out.println("Cube      : java VolUsingCommandLine 1 side");
+            System.out.println("Cylinder  : java VolUsingCommandLine 2 radius height");
+            System.out.println("Ellipsoid : java VolUsingCommandLine 3 a b c");
             return;
         }
 
@@ -65,4 +65,5 @@ public class VolMain {
         }
     }
 }
+
 
