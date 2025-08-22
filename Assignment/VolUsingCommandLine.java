@@ -1,15 +1,10 @@
 class Volume {
-    // Cube
     double vol(double s) {
         return s * s * s;
     }
-
-    // Cylinder
     double vol(double r, double h) {
         return Math.PI * r * r * h;
     }
-
-    // Ellipsoid
     double vol(double a, double b, double c) {
         return (4.0 / 3.0) * Math.PI * a * b * c;
     }
@@ -30,7 +25,7 @@ public class VolUsingCommandLine {
         int ch = Integer.parseInt(args[0]);
 
         switch (ch) {
-            case 1: // Cube
+            case 1: 
                 if (args.length == 2) {
                     double s = Double.parseDouble(args[1]);
                     System.out.println("Volume of Cube = " + v.vol(s));
@@ -39,7 +34,7 @@ public class VolUsingCommandLine {
                 }
                 break;
 
-            case 2: // Cylinder
+            case 2: 
                 if (args.length == 3) {
                     double r = Double.parseDouble(args[1]);
                     double h = Double.parseDouble(args[2]);
@@ -49,7 +44,7 @@ public class VolUsingCommandLine {
                 }
                 break;
 
-            case 3: // Ellipsoid
+            case 3:
                 if (args.length == 4) {
                     double a = Double.parseDouble(args[1]);
                     double b = Double.parseDouble(args[2]);
