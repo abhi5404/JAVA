@@ -12,8 +12,16 @@ param(
 
 function Check-Java {
     try {
-        $javac = & javac -version 2>&1
-        $java = & java -version 2>&1
+        # Prefer JAVA_HOME if set; otherwise rely on PATH
+        if ($env:JAVA_HOME -and (Test-Path (Join-Path $env:JAVA_HOME "bin\javac.exe"))) {
+            $javacPath = Join-Path $env:JAVA_HOME "bin\javac.exe"
+            $javaPath = Join-Path $env:JAVA_HOME "bin\java.exe"
+            & $javacPath -version 2>&1 | Out-Null
+            & $javaPath -version 2>&1 | Out-Null
+        } else {
+            & javac -version 2>&1 | Out-Null
+            & java -version 2>&1 | Out-Null
+        }
         return $true
     } catch {
         return $false
@@ -41,9 +49,17 @@ if ($files.Count -eq 0) {
 }
 
 Write-Host "Compiling $($files.Count) Java files to '$OutDir' using --release 21..."
+# Determine javac/java executables (prefer JAVA_HOME)
+if ($env:JAVA_HOME -and (Test-Path (Join-Path $env:JAVA_HOME "bin\javac.exe"))) {
+    $javacExe = Join-Path $env:JAVA_HOME "bin\javac.exe"
+    $javaExe = Join-Path $env:JAVA_HOME "bin\java.exe"
+} else {
+    $javacExe = "javac"
+    $javaExe = "java"
+}
 
 # Compile with release 21
-$javacCmd = @("javac", "--release", "21", "-d", $OutDir) + $files
+$javacCmd = @($javacExe, "--release", "21", "-d", $OutDir) + $files
 $proc = Start-Process -FilePath $javacCmd[0] -ArgumentList $javacCmd[1..($javacCmd.Length-1)] -NoNewWindow -Wait -PassThru
 if ($proc.ExitCode -ne 0) {
     Write-Error "javac failed with exit code $($proc.ExitCode)."
@@ -54,6 +70,6 @@ Write-Host "Compilation succeeded. Classes are in: $OutDir"
 
 if ($MainClass -ne "") {
     Write-Host "Running $MainClass..."
-    $runCmd = "java -cp $OutDir $MainClass"
+    $runCmd = "`"$javaExe`" -cp `"$OutDir`" $MainClass"
     iex $runCmd
 }
