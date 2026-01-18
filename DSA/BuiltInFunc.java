@@ -6,6 +6,6 @@ public class BuiltInFunc {
         System.out.println(Math.floor(-7.4));
         System.out.println(Math.ceil(7.4));
         System.out.println(Math.min(3, 9));
-        
+        System.out.println(Math.max(3, 9));
     }
 }
