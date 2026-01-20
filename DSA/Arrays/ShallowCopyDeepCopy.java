@@ -6,41 +6,27 @@ public class ShallowCopyDeepCopy {
         int[] originalArray = {1, 2, 3, 4, 5};
         int[] shallowCopyArray = originalArray; // Both reference the same array
 
-        System.out.println("Before modifying shallow copy:");
-        System.out.println("Original Array: ");
+        System.out.println("Original Array before modification:");
         printArray(originalArray);
-        System.out.println("Shallow Copy Array: ");
-        printArray(shallowCopyArray);
 
-        // Modifying the shallow copy
-        shallowCopyArray[0] = 10;
+        shallowCopyArray[0] = 10; // Modifying the shallow copy
 
-        System.out.println("After modifying shallow copy:");
-        System.out.println("Original Array: ");
-        printArray(originalArray);
-        System.out.println("Shallow Copy Array: ");
-        printArray(shallowCopyArray);
+        System.out.println("Original Array after modifying shallow copy:");
+        printArray(originalArray); // Reflects change
 
         // Deep Copy
         int[] deepCopyArray = new int[originalArray.length];
         for (int i = 0; i < originalArray.length; i++) {
-            deepCopyArray[i] = originalArray[i];
+            deepCopyArray[i] = originalArray[i]; // Copying elements
         }
 
-        System.out.println("Before modifying deep copy:");
-        System.out.println("Original Array: ");
+        System.out.println("Original Array before modifying deep copy:");
         printArray(originalArray);
-        System.out.println("Deep Copy Array: ");
-        printArray(deepCopyArray);
 
-        // Modifying the deep copy
-        deepCopyArray[1] = 20;
+        deepCopyArray[1] = 20; // Modifying the deep copy
 
-        System.out.println("After modifying deep copy:");
-        System.out.println("Original Array: ");
-        printArray(originalArray);
-        System.out.println("Deep Copy Array: ");
-        printArray(deepCopyArray);
+        System.out.println("Original Array after modifying deep copy:");
+        printArray(originalArray); // Does not reflect change
     }
 
     public static void printArray(int[] array) {
