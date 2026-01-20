@@ -11,8 +11,10 @@ public class outputInputArrays {
         System.out.println("Enter " + size + " elements for the array:");
         for (int i = 0; i < size; i++) {
             arr[i] = sc.nextInt();
+           
 
         }
+        sc.close();
         System.out.println("The elements in the array are:");
         for (int i = 0; i < size; i++) {
             System.out.println(arr[i]);
