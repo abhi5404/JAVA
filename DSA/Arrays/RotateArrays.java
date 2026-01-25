@@ -26,3 +26,5 @@ static void reverse(int []arr, int start, int end){
             for(int ele : arr) System.out.print(ele+" ");
         }
     }
+
+// gfg
