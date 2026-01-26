@@ -10,6 +10,7 @@ public class Print1toN {
         int n = sc.nextInt();
       
         print (1,n);
+        sc.close();
     }
     public static void print(int x , int n ){
         if (x>n) return ;
