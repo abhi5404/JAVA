@@ -16,3 +16,10 @@ public class Print1toN_1Paraneter {
         System.out.print(n + " ");
     }
 }
+
+// For : print N to 1 
+    // public static void print (int n){
+    //     if (n==0) return ;
+    //     System.out.print(n + " ");
+    //      print(n-1);
+    // }
