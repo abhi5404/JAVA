@@ -18,3 +18,6 @@ public class LCM {
         return findGCD(b, a % b);
     }
 }
+
+
+// math formula : LCM(a, b) = (a * b) / GCD(a, b)
