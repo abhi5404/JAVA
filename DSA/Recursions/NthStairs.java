@@ -12,3 +12,5 @@ public class NthStairs {
         return countWays(n - 1) + countWays(n - 2);
     }
 }
+
+// time complexity : O(2^n)
