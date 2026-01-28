@@ -24,3 +24,4 @@ public class ReverseOfANumber {
     }
 }
 
+// time complexity : O(d) where d is the number of digits in the number
