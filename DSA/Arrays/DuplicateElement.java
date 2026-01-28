@@ -34,3 +34,6 @@ public class DuplicateElement {
 //         System.out.println("The duplicate number is: " + duplicateNumber);
 //     }
 // }
+
+
+// time complexity: O(n^2)
