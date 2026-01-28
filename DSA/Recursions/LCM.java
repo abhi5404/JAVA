@@ -21,3 +21,5 @@ public class LCM {
 
 
 // math formula : LCM(a, b) = (a * b) / GCD(a, b)
+
+// time complexity : O(log(min(a, b)))
