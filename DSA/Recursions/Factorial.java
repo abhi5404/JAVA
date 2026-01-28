@@ -16,3 +16,5 @@ public class Factorial {
         return ans;
     }
 }
+
+//time complexity : O(n)
