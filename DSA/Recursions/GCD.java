@@ -12,3 +12,5 @@ public class GCD {
         return findGCD(b, a % b);
     }
 }
+
+// time complexity : O(log(min(a, b)))  
