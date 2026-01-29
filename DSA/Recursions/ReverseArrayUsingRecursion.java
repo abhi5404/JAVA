@@ -7,7 +7,7 @@ public class ReverseArrayUsingRecursion {
     }
     public static void recPrint(int[] arr, int idx){
         
-        if(idx==0) return;
+        if(idx<0) return;
         System.out.print(arr[idx] + " ");
         recPrint(arr, idx-1);
     }
