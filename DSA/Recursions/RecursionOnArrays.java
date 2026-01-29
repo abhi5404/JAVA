@@ -12,3 +12,5 @@ public class RecursionOnArrays {
         recPrint(arr, idx+1);
     }
 }
+
+// time complexity : O(n)
