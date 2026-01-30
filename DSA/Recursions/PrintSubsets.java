@@ -16,8 +16,8 @@ public class PrintSubsets {
             return;
         }
         char ch = s.charAt(idx);
-        subsets(ans+ch, s, idx+1, list);
-        subsets(ans, s, idx+1, list);
+        subsets(ans+ch, s, idx+1, list); // pick 
+        subsets(ans, s, idx+1, list); //skip
 
     }
 }
