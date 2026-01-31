@@ -3,6 +3,7 @@ package Recursions;
 public class TowerOfHanoi {
     public static void main(String[] args) {
         hanoi(4, 'A', 'C', 'B');
+        System.out.println("Total moves: " + (int)(Math.pow(2, 4) - 1));
     }
     public static void hanoi(int n, char source, char destination, char helper){
         if(n==1){
