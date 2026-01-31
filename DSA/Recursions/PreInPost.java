@@ -15,3 +15,4 @@ public class PreInPost {
         System.out.print(n + " ");
     }
 }
+
