@@ -4,9 +4,9 @@ import java.util.Scanner;
 public class ToThePower {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        System.out.println("Enter Base: ");
+        System.out.print("Enter Base: ");
         int a = sc.nextInt();
-         System.out.println("Enter Exponant: ");
+         System.out.print("Enter Exponent: ");
         int b= sc.nextInt();
         System.out.println(a+ " raised to the power "+b+ " is "+ pow(a,b));
         sc.close();
