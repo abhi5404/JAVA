@@ -22,3 +22,5 @@ public class TowerOfHanoi {
 // Move n-1 disks from source to helper via destination 
 // Move the nth disk from source to destination
 // Move n-1 disks from helper to destination via source
+
+//time complexity : O(2^n)
