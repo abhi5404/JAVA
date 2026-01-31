@@ -16,3 +16,5 @@ public class ToThePower {
         return a*pow(a,b-1);
     }
 }
+
+//time complexity : O(n)
