@@ -15,3 +15,9 @@ public class TowerOfHanoi {
         hanoi(n-1, helper, destination, source); // move n-1 disks from helper to destination via source
     }
 }
+
+
+// concept : 
+// Move n-1 disks from source to helper via destination 
+// Move the nth disk from source to destination
+// Move n-1 disks from helper to destination via source
