@@ -2,8 +2,10 @@ package Recursions;
 import java.util.Scanner;
 public class GenerateParanthesis {
     public static void main(String[] args) {
+        System.out.print("Enter number of pairs of paranthesis : ");
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
+        
         generate(n,0,0,"");
         sc.close();
         System.out.println();
