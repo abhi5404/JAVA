@@ -48,3 +48,5 @@ public class InversionCount {
         return count;
     }
 }
+
+// it is used to count the number of inversions in an array, where an inversion is a pair of indices (i, j) such that i < j and arr[i] > arr[j]. The algorithm uses a modified merge sort approach to count the inversions while sorting the array.
