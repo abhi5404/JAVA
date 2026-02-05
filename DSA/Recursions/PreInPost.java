@@ -16,3 +16,4 @@ public class PreInPost {
     }
 }
 
+// time complexity : O(2^n)
