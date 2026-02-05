@@ -48,3 +48,5 @@ public class ReversePair {
         return count;
     }
 }
+
+// This code is used to count the number of reverse pairs in an array, where a reverse pair is defined as a pair of indices (i, j) such that i < j and arr[i] > 2 * arr[j]. The algorithm uses a modified merge sort approach to count the reverse pairs while sorting the array.
