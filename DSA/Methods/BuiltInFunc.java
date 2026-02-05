@@ -11,3 +11,5 @@ public class BuiltInFunc {
         System.out.println(Math.max(3, 9));
     }
 }
+
+// This code demonstrates the use of various built-in mathematical functions provided by the Math class in Java, such as square root, power, cube root, floor, ceiling, minimum, and maximum.
