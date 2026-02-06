@@ -18,6 +18,10 @@ public class Fraction {
         num = num * f.num;
         den = den * f.den;
     }
+    void divide(Fraction f){
+        num = num * f.den;
+        den = den * f.num;
+    }
     public static void main(String[] args) {
         Fraction f1 = new Fraction(3, 4);
         Fraction f2 = new Fraction(5, 6);
@@ -26,8 +30,11 @@ public class Fraction {
         // f1.add(f2);
         // System.out.println("After addition:");
         // f1.print();
-        f1.multiply(f2);
-        System.out.println("After multiplication:");
+        // f1.multiply(f2);
+        // System.out.println("After multiplication:");
+        // f1.print();
+        f1.divide(f2);
+        System.out.println("After division:");
         f1.print();
     }
 }
