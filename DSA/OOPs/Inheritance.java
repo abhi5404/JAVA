@@ -1,26 +1,44 @@
+// using extends
+
 package OOPs;
 
 public class Inheritance {
-    public static void main(String[] args) {
-        Student student = new Student("Alice", 20, "Computer Science");
-        student.displayInfo();
+static class Animal {
 
-    }
-    
+  // field and method of the parent class
+  String name;
+  public void eat() {
+    System.out.println("I can eat");
+  }
 }
 
-class Student {
-    private String name;
-    private int age;
-    private String major;
-    
-    public Student(String name, int age, String major) {
-        this.name = name;
-        this.age = age;
-        this.major = major;
-    }
-    
-    public void displayInfo() {
-        System.out.println("Name: " + name + ", Age: " + age + ", Major: " + major);
-    }
+// inherit from Animal
+static class Dog extends Animal {
+
+  // new method in subclass
+  public void display() {
+    System.out.println("My name is " + name);
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+
+    // create an object of the subclass
+    Dog labrador = new Dog();
+
+    // access field of superclass
+    labrador.name = "Rohu";
+    labrador.display();
+
+    // call method of superclass
+    // using object of subclass
+    labrador.eat();
+
+  }
+}
+public static void main(String[] args) {
+    Main.main(args);
+}
+
 }
