@@ -20,9 +20,8 @@ public class MutiplyAndAddInComplexNo {
         y += z.y;
     }
     void multiply(MutiplyAndAddInComplexNo z){
-         x= x * z.x - y * z.y;
-         y= x * z.y + y * z.x;
-      
+       x= x*z.x - y*z.y;
+       y= x*z.y + y*z.x;
     }
         public static void main(String[] args) {
             MutiplyAndAddInComplexNo z1 = new MutiplyAndAddInComplexNo(3, 4);
