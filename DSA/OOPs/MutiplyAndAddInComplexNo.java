@@ -19,6 +19,11 @@ public class MutiplyAndAddInComplexNo {
         x += z.x;
         y += z.y;
     }
+    void multiply(MutiplyAndAddInComplexNo z){
+         x= x * z.x - y * z.y;
+         y= x * z.y + y * z.x;
+      
+    }
         public static void main(String[] args) {
             MutiplyAndAddInComplexNo z1 = new MutiplyAndAddInComplexNo(3, 4);
             MutiplyAndAddInComplexNo z2 = new MutiplyAndAddInComplexNo(5, -2);
@@ -26,6 +31,9 @@ public class MutiplyAndAddInComplexNo {
             z2.print();
             z1.add(z2);
             System.out.println("After addition:");
+            z1.print();
+            z1.multiply(z2);
+            System.out.println("After multiplication:");
             z1.print();
         }
 }
