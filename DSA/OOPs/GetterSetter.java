@@ -37,3 +37,5 @@ class Person {
         System.out.println();
     }
 }
+
+//private variables cannot be accessed directly from outside the class. To access and modify these variables, we use getter and setter methods.
