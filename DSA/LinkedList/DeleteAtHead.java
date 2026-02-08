@@ -39,3 +39,6 @@ public class DeleteAtHead {
         display(a);
     }
 }
+
+// key points:
+// to delete at head, we need to update the head to the next node of the current head : head = head.next;
