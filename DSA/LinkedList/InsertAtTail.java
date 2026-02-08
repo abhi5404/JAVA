@@ -38,3 +38,10 @@ public class InsertAtTail {
         display(a);
     }
 }
+
+
+//key points:
+// create a new node like : Node temp = new Node();
+// then assign the value to the new node : temp.val = val;
+// then link the new node to the tail : tail.next = temp;
+// then update the tail to the new node : tail = temp;
