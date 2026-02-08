@@ -4,7 +4,7 @@ class Node {
     Node next;
 }
 
-public class InsertAtLL {
+public class InsertAtHead{
       static void display(Node head) {
         Node temp = head;
         while (temp != null) {
@@ -13,7 +13,7 @@ public class InsertAtLL {
         }
         System.out.println();
     }
-    static Node InsertAtHead(int val , Node head){
+    static Node insertAtHead(int val , Node head){
         Node temp = new Node();
         temp.val = val;
         temp.next = head;
@@ -34,7 +34,7 @@ public class InsertAtLL {
         d.next = e;
 
         display(a);
-        a = InsertAtHead(5, a);
+        a = insertAtHead(5, a);
         display(a);
     }
     
