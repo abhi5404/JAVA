@@ -39,3 +39,10 @@ public class InsertAtHead{
     }
     
 }
+
+
+//key points:
+// create a new node like : Node temp = new Node();
+// then assign the value to the new node : temp.val = val;
+// then link the new node to the head : temp.next = head;
+// then update the head to the new node : head = temp;
