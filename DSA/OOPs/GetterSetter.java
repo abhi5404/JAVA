@@ -4,7 +4,7 @@ public class GetterSetter {
    
 }
 
-class Person {
+class PersonGS {
     private String name;
     private int age;
 
@@ -29,7 +29,7 @@ class Person {
     }
 
      public static void main(String[] args) {
-        Person person = new Person();
+        PersonGS person = new PersonGS();
         person.setName("John");
         person.setAge(30);
         System.out.println("Name: " + person.getName());
