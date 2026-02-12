@@ -37,3 +37,8 @@ class IntersectionOf2LinkedList {
     }
   
 }
+
+//key points:
+// 1. Calculate the length of both linked lists.
+// 2. Find the difference in lengths and move the pointer of the longer linked list ahead by that difference.
+// 3. Move both pointers of the linked lists one step at a time until they point to the same node, which will be the intersection point. If they do not intersect, both pointers will eventually become null.
