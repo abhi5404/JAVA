@@ -1,6 +1,13 @@
 package LinkedList;
 
 public class NodeOfLinkedList {
+    static class Node {
+        int val;
+        Node next;
+        Node() {}
+        Node(int val) { this.val = val; }
+    }
+    
     public static void main(String[] args) {
         // 10->20->30->40->50
         Node a = new Node(); a.val = 10; // head node

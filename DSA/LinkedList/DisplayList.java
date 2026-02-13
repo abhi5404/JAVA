@@ -4,6 +4,13 @@ import java.util.Scanner;
 
 
 public class DisplayList {
+    static class Node {
+        int val;
+        Node next;
+        Node() {}
+        Node(int val) { this.val = val; }
+    }
+    
     public static void displayRec(Node head){
         if(head == null) return;
         displayRec(head.next);
