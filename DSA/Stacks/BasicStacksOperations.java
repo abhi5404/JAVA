@@ -71,3 +71,5 @@ class Stacks {
         s.display();
     }
 }
+
+// stack
