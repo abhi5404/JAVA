@@ -1,3 +1,5 @@
+package Stacks;
+
 class Stacks {
     int max = 20;
     int[] arr = new int[max];
