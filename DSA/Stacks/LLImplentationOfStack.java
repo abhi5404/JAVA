@@ -9,21 +9,18 @@ class Node{
 class MyStack{
     Node head;
     int len;
-    int peek() throws Exception{
-        if(head==null){
-            throw new Exception("Stack Underflow Error");
-        }
+    
+    int peek(){
         return head.val;
     }
-    int pop() throws Exception{ // deleteAtHead
-        if(head==null){
-            throw new Exception("Stack Underflow Error");
-        }
+    
+    int pop(){ // deleteAtHead
         int x = head.val;
         head = head.next;
         len--;
         return x;
     }
+    
     void push(int ele){ // addAtHead
         Node temp = new Node(ele);
         if(len==0) head = temp;
@@ -33,9 +30,11 @@ class MyStack{
         }
         len++;
     }
+    
     int size(){
         return len;
     }
+    
     void display(){
         Node temp = head;
         while(temp!=null){
@@ -45,11 +44,14 @@ class MyStack{
         System.out.println();
     }
 }
+
 public class LLImplentationOfStack {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         MyStack st = new MyStack();
-        st.pop();
-        st.push(10); st.push(20); st.push(30); st.push(40);
+        st.push(10); 
+        st.push(20); 
+        st.push(30); 
+        st.push(40);
         st.display();
 
         st.pop();
