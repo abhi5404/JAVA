@@ -1,4 +1,6 @@
-class Solution {
+package LinkedList;
+
+class ReverseLinkedlistSolution {
     // Node reverseList(Node head) {
     //     if(head==null || head.next==null) return head;
     //     Node a = head.next;
@@ -34,3 +36,4 @@ class Solution {
     //     return arr.get(n-1);
     // }
 }
+

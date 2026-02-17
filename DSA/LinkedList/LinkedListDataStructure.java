@@ -1,21 +1,21 @@
 package LinkedList;
 
-import java.util.LinkedList;
-
-class Node{ // user defined data type
+class NodeDemo{ // user defined data type
     int val;
-    Node next; // null
-    Node(int val){
+    NodeDemo next; // null
+    NodeDemo(){
+    }
+    NodeDemo(int val){
         this.val = val;
     }
 }
 class Linkedlist{ // user defined data structure
-    Node head; // null
-    Node tail; // null;
+    NodeDemo head; // null
+    NodeDemo tail; // null;
     int size;
     int search(int val){
         if(head==null) return -1;
-        Node temp = head;
+        NodeDemo temp = head;
         int idx = 0;
         while(temp != null){
             if(temp.val == val) return idx;
@@ -25,7 +25,7 @@ class Linkedlist{ // user defined data structure
         return -1;
     }
     void addAtHead(int val) {
-        Node temp = new Node(val);
+        NodeDemo temp = new NodeDemo(val);
         if(head==null) head = tail = temp;
         else{
             temp.next = head;
@@ -38,7 +38,7 @@ class Linkedlist{ // user defined data structure
             addAtHead(val);
             return;
         }
-        Node temp = new Node(val);
+        NodeDemo temp = new NodeDemo(val);
         tail.next = temp;
         tail = temp;
         size++;
@@ -54,7 +54,7 @@ class Linkedlist{ // user defined data structure
     }
     void display() {
         if(head==null) return;
-        Node temp = head;
+        NodeDemo temp = head;
         while(temp != null){
             System.out.print(temp.val+" ");
             temp = temp.next;
@@ -62,7 +62,7 @@ class Linkedlist{ // user defined data structure
         System.out.println();
     }
     int get(int idx) {
-        Node temp = head;
+        NodeDemo temp = head;
         for(int i=1;i<=idx;i++){
             temp = temp.next;
         }
@@ -73,11 +73,11 @@ class Linkedlist{ // user defined data structure
         else if(idx==0) addAtHead(val);
         else if(idx==size) addAtTail(val);
         else{
-            Node temp = head;
+            NodeDemo temp = head;
             for(int i=1;i<=idx-1;i++){
                 temp = temp.next;
             }
-            Node t = new Node(val);
+            NodeDemo t = new NodeDemo(val);
             t.next = temp.next;
             temp.next = t;
             size++;
@@ -92,7 +92,7 @@ class Linkedlist{ // user defined data structure
             deleteAtHead();
             return;
         }
-        Node temp = head;
+        NodeDemo temp = head;
         for(int i=1;i<=idx-1;i++){
             temp = temp.next;
         }

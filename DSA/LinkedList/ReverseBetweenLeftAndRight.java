@@ -1,4 +1,6 @@
-class Solution {
+package LinkedList;
+
+class ReverseBetweenLeftAndRightSolution {
     public static Node reverse(Node head){
         Node prev = null;
         Node curr = head;
@@ -59,3 +61,4 @@ class Solution {
     //     return arr.get(0);
     // }
 }
+

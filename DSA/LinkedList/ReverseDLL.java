@@ -1,4 +1,6 @@
-class Solution {
+package LinkedList;
+
+class ReverseDLLSolution {
     public DLLNode reverseDLL(DLLNode head) {
         if(head.next==null) return head;
         DLLNode temp = null;
@@ -25,3 +27,4 @@ class Solution {
     //     return pre;
     // }
 }
+

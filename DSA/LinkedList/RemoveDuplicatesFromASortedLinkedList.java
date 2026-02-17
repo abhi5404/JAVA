@@ -1,4 +1,6 @@
-class Solution {
+package LinkedList;
+
+class RemoveDuplicatesFromASortedLinkedListSolution {
     Node removeDuplicates(Node head) {
         Node i = head;
         Node j = head;
@@ -13,3 +15,4 @@ class Solution {
         return head;
     }
 }
+

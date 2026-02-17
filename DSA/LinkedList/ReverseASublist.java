@@ -1,26 +1,26 @@
 package LinkedList;
 
 public class ReverseASublist {
-    static class Node {
+    static class NodeDemo {
         int data;
-        Node next;
-        Node(int data) { this.data = data; this.next = null; }
+        NodeDemo next;
+        NodeDemo(int data) { this.data = data; this.next = null; }
     }
     
     public static void main(String[] args) {
-        Node head = new Node(1);
-        head.next = new Node(2);
-        head.next.next = new Node(3);
-        head.next.next.next = new Node(4);
-        head.next.next.next.next = new Node(5);
+        NodeDemo head = new NodeDemo(1);
+        head.next = new NodeDemo(2);
+        head.next.next = new NodeDemo(3);
+        head.next.next.next = new NodeDemo(4);
+        head.next.next.next.next = new NodeDemo(5);
 
         int left = 2;
         int right = 4;
 
-        Node result = reverseSublist(head, left, right);
+        NodeDemo result = reverseSublist(head, left, right);
 
         // Print the modified linked list
-        Node temp = result;
+        NodeDemo temp = result;
         while (temp != null) {
             System.out.print(temp.data + " ");
             temp = temp.next;
@@ -28,25 +28,25 @@ public class ReverseASublist {
         System.out.println(); // Print a newline for better formatting
     }
 
-    public static Node reverseSublist(Node head, int left, int right) {
+    public static NodeDemo reverseSublist(NodeDemo head, int left, int right) {
         if (head == null || left == right) {
             return head;
         }
 
-        Node dummy = new Node(0);
+        NodeDemo dummy = new NodeDemo(0);
         dummy.next = head;
-        Node prev = dummy;
+        NodeDemo prev = dummy;
 
         // Move prev to the node before the left position
         for (int i = 0; i < left - 1; i++) {
             prev = prev.next;
         }
 
-        Node curr = prev.next;
+        NodeDemo curr = prev.next;
 
         // Reverse the sublist
         for (int i = 0; i < right - left; i++) {
-            Node next = curr.next;
+            NodeDemo next = curr.next;
             curr.next = next.next;
             next.next = prev.next;
             prev.next = next;

@@ -1,10 +1,10 @@
 package LinkedList;
 
-class Node {
+class CircularNode {
     int val;
-    Node next;
+    CircularNode next;
     
-    Node() {
+    CircularNode() {
         this.val = 0;
         this.next = null;
     }
@@ -12,18 +12,18 @@ class Node {
 
 public class CovertSinglyToCircular {
     public static void main(String[] args) {
-        Node head = new Node(); head.val = 1;
-        head.next = new Node(); head.next.val = 2;
-        head.next.next = new Node(); head.next.next.val = 3;
-        head.next.next.next = new Node(); head.next.next.next.val = 4;
-        head.next.next.next.next = new Node(); head.next.next.next.next.val = 5;
+        CircularNode head = new CircularNode(); head.val = 1;
+        head.next = new CircularNode(); head.next.val = 2;
+        head.next.next = new CircularNode(); head.next.next.val = 3;
+        head.next.next.next = new CircularNode(); head.next.next.next.val = 4;
+        head.next.next.next.next = new CircularNode(); head.next.next.next.next.val = 5;
 
         // Convert to circular linked list
-        Node temp = head;
+        CircularNode temp = head;
         while (temp.next != null) {
             temp = temp.next;
         }
-        temp.next = head; // Point the last node to the head to make it circular
+        temp.next = head; // Point the last CircularNode to the head to make it circular
 
         // Traversing the circular linked list
         temp = head;
@@ -34,3 +34,4 @@ public class CovertSinglyToCircular {
         System.out.println(); // Print a newline for better formatting
     }
 }
+

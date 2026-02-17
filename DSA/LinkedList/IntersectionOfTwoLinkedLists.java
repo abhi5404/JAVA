@@ -1,4 +1,6 @@
-public class Solution {
+package LinkedList;
+
+class IntersectionOfTwoLinkedLists {
     public ListNode getIntersectionNode(ListNode head1, ListNode head2) {
         int len1 = 0;
         ListNode temp1 = head1;
@@ -31,3 +33,4 @@ public class Solution {
         return temp1;
     }
 }
+

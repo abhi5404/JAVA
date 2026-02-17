@@ -1,4 +1,6 @@
-class Solution {
+package LinkedList;
+
+class FlattenADoublyLLSolution {
     public Node flatten(Node head) {
         if(head==null) return head;
         Node curr = head;
@@ -20,3 +22,4 @@ class Solution {
         return head;
     }
 }
+

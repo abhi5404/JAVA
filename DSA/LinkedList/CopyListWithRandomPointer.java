@@ -1,4 +1,6 @@
-class Solution {
+package LinkedList;
+
+class CopyListWithRandomPointerSolution {
     public Node deepCopy(Node head1) {
         Node temp1 = head1;
         Node head2 = new Node(-1);
@@ -66,3 +68,4 @@ class Solution {
         return head2;
     }
 }
+

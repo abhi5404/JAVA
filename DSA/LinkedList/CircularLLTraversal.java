@@ -1,4 +1,6 @@
-class Solution {
+package LinkedList;
+
+class CircularLLTraversalSolution {
     void printList(Node head) {
         Node temp = head;
         while(temp.next!=head){
@@ -8,3 +10,4 @@ class Solution {
         System.out.print(temp.data+" ");
     }
 }
+

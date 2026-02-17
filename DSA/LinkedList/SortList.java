@@ -1,4 +1,6 @@
-class Solution {
+package LinkedList;
+
+class SortListSolution {
     static Node mergeSort(Node head) {
         if(head.next == null) return head;
         Node slow = head;
@@ -34,3 +36,4 @@ class Solution {
         return dummy.next;
     }
 }
+

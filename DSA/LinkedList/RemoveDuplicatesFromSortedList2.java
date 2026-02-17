@@ -1,4 +1,6 @@
-class Solution {
+package LinkedList;
+
+class RemoveDuplicatesFromSortedList2Solution {
     public ListNode deleteDuplicates(ListNode head) {
         ListNode dummy = new ListNode(-1);
         ListNode t = dummy;
@@ -21,3 +23,4 @@ class Solution {
         return dummy.next;
     }
 }
+

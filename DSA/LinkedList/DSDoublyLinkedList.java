@@ -1,12 +1,12 @@
 package LinkedList;
 
 public class DSDoublyLinkedList {
-    static class Node {
+    static class NodeDemo {
     int data;
-    Node prev;
-    Node next;
+    NodeDemo prev;
+    NodeDemo next;
 
-    Node(int data) {
+    NodeDemo(int data) {
         this.data = data;
         this.prev = null;
         this.next = null;
@@ -15,11 +15,11 @@ public class DSDoublyLinkedList {
 
 static class DoublyLinkedList {
 
-    Node head;
+    NodeDemo head;
 
     // Add at Head
     void addAtHead(int data) {
-        Node newNode = new Node(data);
+        NodeDemo newNode = new NodeDemo(data);
 
         if (head != null) {
             head.prev = newNode;
@@ -30,14 +30,14 @@ static class DoublyLinkedList {
 
     // Add at Tail
     void addAtTail(int data) {
-        Node newNode = new Node(data);
+        NodeDemo newNode = new NodeDemo(data);
 
         if (head == null) {
             head = newNode;
             return;
         }
 
-        Node temp = head;
+        NodeDemo temp = head;
         while (temp.next != null) {
             temp = temp.next;
         }
@@ -53,7 +53,7 @@ static class DoublyLinkedList {
             return;
         }
 
-        Node temp = head;
+        NodeDemo temp = head;
         for (int i = 0; i < idx - 1; i++) {
             if (temp == null) return;
             temp = temp.next;
@@ -64,7 +64,7 @@ static class DoublyLinkedList {
             return;
         }
 
-        Node newNode = new Node(data);
+        NodeDemo newNode = new NodeDemo(data);
         newNode.next = temp.next;
         newNode.prev = temp;
 
@@ -74,15 +74,15 @@ static class DoublyLinkedList {
 
     // Add at Middle using slow-fast
     void addAtMiddle(int data) {
-        Node newNode = new Node(data);
+        NodeDemo newNode = new NodeDemo(data);
 
         if (head == null) {
             head = newNode;
             return;
         }
 
-        Node slow = head;
-        Node fast = head;
+        NodeDemo slow = head;
+        NodeDemo fast = head;
 
         while (fast.next != null && fast.next.next != null) {
             slow = slow.next;
@@ -110,7 +110,7 @@ static class DoublyLinkedList {
 
     // Display Forward
     void displayForward() {
-        Node temp = head;
+        NodeDemo temp = head;
         while (temp != null) {
             System.out.print(temp.data + " <-> ");
             temp = temp.next;
@@ -122,7 +122,7 @@ static class DoublyLinkedList {
     void displayBackward() {
         if (head == null) return;
 
-        Node temp = head;
+        NodeDemo temp = head;
         while (temp.next != null) {
             temp = temp.next;
         }

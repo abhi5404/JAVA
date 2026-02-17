@@ -1,4 +1,6 @@
-class Solution {
+package LinkedList;
+
+class SwappingNodesInALinkedListSolution {
     public ListNode swapNodes(ListNode head, int k) {
         ListNode slow = head;
         ListNode fast = head;
@@ -19,3 +21,4 @@ class Solution {
         return head;
     }
 }
+

@@ -1,13 +1,13 @@
 package LinkedList;
 
 public class DeleteAtHead {
-    static class Node {
+    static class NodeDemo {
         int val;
-        Node next;
+        NodeDemo next;
     }
 
-    static void display(Node head) {
-        Node temp = head;
+    static void display(NodeDemo head) {
+        NodeDemo temp = head;
         while (temp != null) {
             System.out.print(temp.val + " ");
             temp = temp.next;
@@ -15,7 +15,7 @@ public class DeleteAtHead {
         System.out.println();
     }
 
-    static Node deleteAtHead(Node head) {
+    static NodeDemo deleteAtHead(NodeDemo head) {
         if (head == null) {
             return null;
         }
@@ -23,11 +23,11 @@ public class DeleteAtHead {
         return head;
     }
       public static void main(String[] args) {
-        Node a = new Node(); a.val = 10;
-        Node b = new Node(); b.val = 20;
-        Node c = new Node(); c.val = 30;
-        Node d = new Node(); d.val = 40;
-        Node e = new Node(); e.val = 50;
+        NodeDemo a = new NodeDemo(); a.val = 10;
+        NodeDemo b = new NodeDemo(); b.val = 20;
+        NodeDemo c = new NodeDemo(); c.val = 30;
+        NodeDemo d = new NodeDemo(); d.val = 40;
+        NodeDemo e = new NodeDemo(); e.val = 50;
         
         a.next = b;
         b.next = c;

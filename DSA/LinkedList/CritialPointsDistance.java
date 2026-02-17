@@ -1,4 +1,6 @@
-class Solution {
+package LinkedList;
+
+class CritialPointsDistanceSolution {
     public int[] nodesBetweenCriticalPoints(ListNode head) {
         int[] ans = {-1,-1};
         int idx = 1, firstIdx = -1, lastIdx = -1, minDist = Integer.MAX_VALUE;
@@ -30,3 +32,4 @@ class Solution {
         return ans;
     }
 }
+

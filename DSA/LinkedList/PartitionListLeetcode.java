@@ -1,4 +1,6 @@
-class Solution {
+package LinkedList;
+
+class PartitionListLeetcodeSolution {
     public ListNode partition(ListNode head, int x) {
         ListNode d1 = new ListNode(45);
         ListNode d2 = new ListNode(18);
@@ -21,3 +23,4 @@ class Solution {
         return d1.next;
     }
 }
+

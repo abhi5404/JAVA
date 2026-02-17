@@ -1,4 +1,6 @@
-class Solution {
+package LinkedList;
+
+class RotateListSolution {
     public int length(ListNode head){
         int len = 0;
         ListNode temp = head;
@@ -32,3 +34,4 @@ class Solution {
         return a;
     }
 }
+

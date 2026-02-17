@@ -1,4 +1,6 @@
-class Solution {
+package LinkedList;
+
+class ReverseAndDeleteCircularLLSolution {
     // Function to reverse a circular linked list
     void reverseList(Node head) {
         Node prev = null;
@@ -44,3 +46,4 @@ class Solution {
         return head;
     }
 }
+

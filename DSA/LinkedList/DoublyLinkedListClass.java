@@ -1,18 +1,18 @@
 package LinkedList;
-class ListNode{ // user defined data type
+class ListNodeDemo{ // user defined data type
     int val;
-    ListNode next;
-    ListNode prev;
-    ListNode(int val){
+    ListNodeDemo next;
+    ListNodeDemo prev;
+    ListNodeDemo(int val){
         this.val = val;
     }
 }
 class DLL{
-    ListNode head;
-    ListNode tail;
+    ListNodeDemo head;
+    ListNodeDemo tail;
     int size;
     void insertAtHead(int val){
-        ListNode temp = new ListNode(val);
+        ListNodeDemo temp = new ListNodeDemo(val);
         if(head==null) head = tail = temp;
         else{
             temp.next = head;
@@ -22,7 +22,7 @@ class DLL{
         size++;
     }
     void insertAtTail(int val){
-        ListNode temp = new ListNode(val);
+        ListNodeDemo temp = new ListNodeDemo(val);
         if(head==null) head = tail = temp;
         else{
             tail.next = temp;
@@ -56,7 +56,7 @@ class DLL{
         size--;
     }
     void display(){
-        ListNode temp = head;
+        ListNodeDemo temp = head;
         while(temp!=null){
             System.out.print(temp.val+" ");
             temp = temp.next;
@@ -64,7 +64,7 @@ class DLL{
         System.out.println();
     }
     void displayReverse(){
-        ListNode temp = tail;
+        ListNodeDemo temp = tail;
         while(temp!=null){
             System.out.print(temp.val+" ");
             temp = temp.prev;
@@ -84,8 +84,8 @@ class DLL{
             insertAtTail(val);
             return;
         }
-        ListNode a = new ListNode(val);
-        ListNode temp = head;
+        ListNodeDemo a = new ListNodeDemo(val);
+        ListNodeDemo temp = head;
         for(int i=1;i<=idx-1;i++){
             temp = temp.next;
         }

@@ -2,8 +2,8 @@ package OOPs;
 
 public class Constructor {
     public static void main(String[] args) {
-        Person person1 = new Person("Alice", 28);
-        Person person2 = new Person("Bob", 35);
+        ConstructorPerson person1 = new ConstructorPerson("Alice", 28);
+        ConstructorPerson person2 = new ConstructorPerson("Bob", 35);
 
         person1.displayInfo();
         System.out.println();
@@ -11,12 +11,12 @@ public class Constructor {
     }
 }
 
-class Person {
+class ConstructorPerson {
     private String name;
     private int age;
 
     // Constructor
-    public Person(String name, int age) {
+    public ConstructorPerson(String name, int age) {
         this.name = name;
         this.age = age;
     }

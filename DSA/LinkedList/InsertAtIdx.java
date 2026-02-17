@@ -1,21 +1,21 @@
 package LinkedList;
 
 public class InsertAtIdx {
-    Node head;
+    NodeDemo head;
     int size;
 
-    static class Node {
+    static class NodeDemo {
         int val;
-        Node next;
+        NodeDemo next;
 
-        Node(int val) {
+        NodeDemo(int val) {
             this.val = val;
             this.next = null;
         }
     }
 
     void display() {
-        Node temp = head;
+        NodeDemo temp = head;
         while (temp != null) {
             System.out.print(temp.val + " ");
             temp = temp.next;
@@ -24,18 +24,18 @@ public class InsertAtIdx {
     }
 
     void addAtHead(int val) {
-        Node t = new Node(val);
+        NodeDemo t = new NodeDemo(val);
         t.next = head;
         head = t;
         size++;
     }
 
     void addAtTail(int val) {
-        Node t = new Node(val);
+        NodeDemo t = new NodeDemo(val);
         if (head == null) {
             head = t;
         } else {
-            Node temp = head;
+            NodeDemo temp = head;
             while (temp.next != null) {
                 temp = temp.next;
             }
@@ -52,12 +52,12 @@ public class InsertAtIdx {
         if (idx == 0) addAtHead(val);
         else if (idx == size) addAtTail(val);
         else {
-            Node temp = head;
+            NodeDemo temp = head;
             for (int i = 1; i <= idx - 1; i++) {
                 temp = temp.next;
             }
 
-            Node t = new Node(val);
+            NodeDemo t = new NodeDemo(val);
             t.next = temp.next;
             temp.next = t;
             size++;

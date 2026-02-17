@@ -1,4 +1,6 @@
-class Solution {
+package LinkedList;
+
+class DetectLoopInLinkedListSolution {
     public static boolean detectLoop(Node head) {
         Node slow = head;
         Node fast = head;
@@ -20,3 +22,4 @@ class Solution {
     //     return false;
     // }
 }
+

@@ -1,4 +1,6 @@
-class Solution {
+package LinkedList;
+
+class MiddleOfLinkedListSolution {
     int getMiddle(Node head) {
         Node slow = head;
         Node fast = head;
@@ -21,3 +23,4 @@ class Solution {
         // return temp.data;
     }
 }
+

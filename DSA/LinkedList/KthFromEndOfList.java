@@ -1,4 +1,6 @@
-class Solution {
+package LinkedList;
+
+class KthFromEndOfListSolution {
     int getKthFromLast(Node head, int k) {
         Node slow = head;
         Node fast = head;
@@ -14,3 +16,4 @@ class Solution {
         return slow.data;
     }
 }
+

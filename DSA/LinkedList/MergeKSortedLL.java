@@ -1,4 +1,8 @@
-class Solution {
+package LinkedList;
+
+import java.util.List;
+
+class MergeKSortedLLSolution {
     Node mergeKLists(List<Node> arr) {
         while(arr.size()>1){
             Node a = arr.get(arr.size()-1);
@@ -31,3 +35,5 @@ class Solution {
         return dummy.next;
     }
 }
+
+

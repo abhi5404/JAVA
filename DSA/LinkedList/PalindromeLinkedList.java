@@ -1,4 +1,6 @@
-class Solution {
+package LinkedList;
+
+class PalindromeLinkedListSolution {
     static Node reverse(Node head) {
         Node curr = head;
         Node prev = null;
@@ -48,3 +50,4 @@ class Solution {
     //     return true;
     // }
 }
+

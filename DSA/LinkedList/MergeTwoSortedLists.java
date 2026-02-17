@@ -1,4 +1,6 @@
-class Solution {
+package LinkedList;
+
+class MergeTwoSortedListsSolution {
     Node sortedMerge(Node head1, Node head2) {
         Node i = head1;
         Node j = head2;
@@ -20,3 +22,4 @@ class Solution {
         return dummy.next;
     }
 }
+
