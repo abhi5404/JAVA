@@ -1,3 +1,5 @@
+package LinkedList;
+
 class CopyListWithRandomPointerCopySolution {
     public Node deepCopy(Node head1) {
         Node temp1 = head1;
