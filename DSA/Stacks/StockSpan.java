@@ -1,4 +1,9 @@
 
+package Stacks;
+
+import java.util.Stack;
+import java.util.ArrayList;
+
 class Solution {
     public ArrayList<Integer> calculateSpan(int[] arr) {
         int n = arr.length;
