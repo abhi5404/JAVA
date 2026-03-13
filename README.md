@@ -1,22 +1,17 @@
 # Java Practice Workspace
 
-This repository is a personal Java learning and practice workspace covering:
+This repository is a personal Java practice workspace for:
 
-- Core Java basics
-- OOP concepts (with notebooks)
+- Core Java concepts
+- OOP learning (with notebooks)
 - Data Structures & Algorithms (DSA)
-- Practice assignments
+- Small assignment-based programs
 
 ## Repository Layout
 
 ```text
 JAVA/
 ├── Assignment/
-│   ├── Fibonacci.java
-│   ├── TestArray.java
-│   ├── VolMain.java
-│   └── VolUsingCommandLine.java
-│
 ├── DSA/
 │   ├── Arrays/
 │   ├── CyclicSort/
@@ -24,52 +19,44 @@ JAVA/
 │   ├── MergeSort/
 │   ├── Methods/
 │   ├── OOPs/
+│   ├── Queues/
 │   ├── Recursions/
 │   ├── Stacks/
 │   └── Time Complexity/
-│
 ├── Oops Chapters/
-│   ├── 0.BackStory.ipynb
-│   ├── 1.Basics.ipynb
-│   ├── ...
-│   └── 19.MultithreadingSynchronization.ipynb
-│
-├── IJava/
+├── out/
 └── README.md
 ```
 
 ## Prerequisites
 
-- Java JDK 17+ installed
-- VS Code, IntelliJ, or any Java IDE
-- (Optional) Jupyter + IJava kernel for `.ipynb` Java notebooks
+- Java JDK 17+
+- VS Code / IntelliJ / any Java IDE
+- (Optional) Jupyter + Java kernel support for `.ipynb` files
 
-Check Java:
+Verify Java installation:
 
 ```powershell
 java -version
 javac -version
 ```
 
-## How to Run Java Files
+## Quick Start (Compile and Run)
 
-From the repository root (`JAVA`), compile and run using folder-aware class names.
+Use one of the two approaches below depending on whether the file has a `package` declaration.
 
-### Example 1: Assignment
+### 1) If the file has `package ...;`
+
+Run from repository root:
 
 ```powershell
 javac Assignment/Fibonacci.java
 java Assignment.Fibonacci
 ```
 
-### Example 2: DSA Arrays
+### 2) If the file has no package
 
-```powershell
-javac DSA/Arrays/TwoSum.java
-java DSA.Arrays.TwoSum
-```
-
-> If a file has no `package` declaration, run it from its directory:
+Run from the file's folder:
 
 ```powershell
 cd DSA/Arrays
@@ -80,27 +67,21 @@ java TwoSum
 ## Suggested Learning Path
 
 1. `Oops Chapters/1.Basics.ipynb`
-2. `Oops Chapters/3.Class.ipynb` to `Oops Chapters/12.Interface.ipynb`
+2. `Oops Chapters/3.Class.ipynb` → `Oops Chapters/12.Interface.ipynb`
 3. `DSA/Arrays/` basics (`BasicArrays.java`, `SearchInArray.java`, `SortArrays.java`)
 4. `DSA/LinkedList/` core operations
 5. `DSA/Recursions/` and `DSA/MergeSort/`
 
 ## Quick Navigation
 
+- Assignments: `Assignment/`
 - Arrays: `DSA/Arrays/`
 - Linked List: `DSA/LinkedList/`
 - Recursion: `DSA/Recursions/`
 - OOP practice code: `DSA/OOPs/`
 - OOP notebooks: `Oops Chapters/`
-- Assignments: `Assignment/`
 
 ## Notes
 
-- This workspace is organized for practice, so file naming and style may vary by topic.
-- Some files may depend on package declarations; adjust run commands accordingly.
-
-## Future Improvements
-
-- Add package consistency across folders
-- Add problem tags (`easy/medium/hard`) for DSA files
-- Add per-topic index files
+- This is a learning-focused repository; naming/style may vary by topic.
+- Some programs depend on package declarations, so run commands accordingly.
