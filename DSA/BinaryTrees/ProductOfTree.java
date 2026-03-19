@@ -1,5 +1,14 @@
 package BinaryTrees;
 
+class Node {
+    int val;
+    Node left;
+    Node right;
+    Node(int val) {
+        this.val = val;
+    }
+}
+
 public class ProductOfTree {
     public static void main(String[] args) {
         //        3
@@ -17,7 +26,15 @@ public class ProductOfTree {
         a.left = b; a.right = c;
         b.left = d; b.right = e;
         c.left = f; c.right = g;
-        System.out.println(product(a));
+        display(a);
+        System.out.println();
+        System.out.println("Product of all nodes: " + product(a));
+    }
+    private static void display(Node root) {
+        if (root == null) return;
+        System.out.print(root.val + " ");
+        display(root.left);
+        display(root.right);
     }
     private static int product(Node root) {
         if (root == null) return 1;
