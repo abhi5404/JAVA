@@ -1,6 +1,6 @@
 package BinaryTrees;
 
-public class MaxValueInTree {
+public class MaxMinValueInTree {
     public static void main(String[] args) {
         //        3
         //      /   \
@@ -18,10 +18,16 @@ public class MaxValueInTree {
         b.left = d; b.right = e;
         c.left = f; c.right = g;
         System.out.println(max(a));
+        System.out.println(min(a));
     }
     private static int max(Node root) {
         if (root == null) return Integer.MIN_VALUE;
      return Math.max(root.val, Math.max(max(root.left), max(root.right)));
         
     }
+    private static int min(Node root) {
+        if (root == null) return Integer.MAX_VALUE;
+        return Math.min(root.val, Math.min(min(root.left), min(root.right)));
+    }
+
 }
