@@ -6,3 +6,5 @@ class BST {
         else return search(root.right,x);
     }
 }
+
+
